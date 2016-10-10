@@ -18,6 +18,7 @@ public class CartFragment extends BaseFragment {
 
 
     public CartFragment() {
+        System.out.println("11");
         // Required empty public constructor
     }
 

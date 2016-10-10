@@ -16,6 +16,7 @@ public abstract class BaseFragment extends Fragment {
         initData();
         initEvent();
 
+
     }
     public abstract void initView();
     public abstract void initEvent();
