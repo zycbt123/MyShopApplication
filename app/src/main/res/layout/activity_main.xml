@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.first.zyc.myshopapplication.MainActivity">
+
+    <View
+        android:id="@+id/struct"
+        android:background="#f00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        />
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:background="#ccc"
+        android:layout_toRightOf="@id/struct"
+        android:layout_alignBottom="@id/struct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_below="@id/fl_content"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_rb1"
+            android:text="@string/rt_1"
+            android:drawableTop="@drawable/main_page_bg"
+            style="@style/radiotab"/>
+
+        <RadioButton
+
+            android:id="@+id/rb_rb2"
+            android:text="@string/rt_2"
+            style="@style/radiotab"
+            android:drawableTop="@drawable/shoping_cart_bg"/>
+
+        <RadioButton
+            android:id="@+id/rb_rb3"
+            android:text="@string/rt_3"
+            style="@style/radiotab"
+            android:drawableTop="@drawable/person_center_bg"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
+
